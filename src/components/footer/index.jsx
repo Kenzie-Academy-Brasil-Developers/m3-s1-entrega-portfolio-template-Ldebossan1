@@ -1,31 +1,32 @@
+import WhatsappIMG from "../../assets/whatsapp-icon.png";
+import linkedinIMG from "../../assets/linkedin-icon.png";
+import githubIMG from "../../assets/github-icon.png";
+
 import { user } from "../../data/user";
 
 export const Footer = () => {
   return (
     <>
       <footer>
-        <h2>Contato</h2>
+        <h2 className="title2">Contato</h2>
         <ul>
           <li>
-            <a href="" target="_blank">
-              <img src="../../assets/whatsapp-icon.png" alt="WhatsappIcon" />
+            <a href="#">
+              <img src={WhatsappIMG} alt="WhatsappIcon" />
             </a>
           </li>
           <li>
-            <a
-              href="https://www.linkedin.com/in/lucas-cavalheiro-e-silva-debossan-809423173/"
-              target="_blank"
-            >
-              <img src="../../assets/linkedin-icon.png" alt="LinkedinIcon" />
+            <a href="#">
+              <img src={linkedinIMG} alt="LinkedinIcon" />
             </a>
           </li>
           <li>
-            <a href="https://github.com/Ldebossan1" target="_blank">
-              <img src="../../assets/github-icon.png" alt="GitHubIcon" />
+            <a href="#">
+              <img src={githubIMG} alt="GitHubIcon" />
             </a>
           </li>
         </ul>
-        <p>Todos direitos reservados - {user}</p>
+        <p className="paragraph">Todos direitos reservados - {user}</p>
       </footer>
     </>
   );

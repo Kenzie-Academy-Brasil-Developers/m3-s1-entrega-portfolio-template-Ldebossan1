@@ -1,8 +1,10 @@
+import portfolioIMG from "../../assets/portfolio.png"
+
 export const Header = () => {
     return (
         <>
            <header>
-            <h1>Portfólio</h1>
+            <img src={portfolioIMG} alt="Portfólio IMG" />
             <ul>
                 <li>Sobre</li>
                 <li>Stack</li>

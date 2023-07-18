@@ -1,0 +1,9 @@
+:root {
+    --color-primary: #6880FF;
+    --color-primary-hover:#7C91FF;
+
+    --grey1: #000000;
+    --grey2: #FFFFFF;
+
+    --font1: 'Inter', sans-serif;
+}
