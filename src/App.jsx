@@ -2,15 +2,15 @@ import { AboutMe } from "./components/AboutMe"
 import { BannerSection } from "./components/BannerSection"
 import { ProjectSection } from "./components/ProjectSection"
 import { TechSection } from "./components/TechSection"
-import { Footer } from "./components/footer"
-import { Header } from "./components/header"
+import { Footer } from "./components/Footer"
+import { Header } from "./components/Header"
 
 
 function App() {
 
   return (
     <>
-      <Header />
+      <Header/>
       <BannerSection/>
       <AboutMe/>
       <TechSection/>
