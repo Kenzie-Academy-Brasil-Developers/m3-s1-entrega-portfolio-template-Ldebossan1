@@ -1,0 +1,73 @@
+.ProjectsSection {
+    margin-top: 5rem;
+    margin-left: 0.9375rem;
+}
+
+.ProjectsList {
+    margin-top: 1.25rem;
+
+}
+
+.ProjectsCard {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 1.5625rem;
+    width: 20.75rem;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.ProjectsCard img {
+    width: 2.3125rem;
+    height: 2.375rem;
+    margin-left: 16.25rem;
+    position: absolute;
+}
+
+.ProjectTitle {
+    font-size: 1.375rem;
+    font-weight: 800;
+    line-height: 1.5625rem;
+    padding-bottom: 0.625rem;
+}
+
+.ProjectDescription {
+    margin-top: 1.875rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.ProjectLink {
+    font-size: 1rem;
+    color: var(--color-primary);
+    font-weight: 700;
+    margin-top: 3.125rem;
+    width: 5.625rem;
+    height: auto;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--color-primary-hover);
+}
+
+@media (min-width:720px) {
+    .ProjectsList {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.625rem 1.875rem;
+    }
+
+    .ProjectsCard {
+        width: 25.9375rem;
+    }
+
+}

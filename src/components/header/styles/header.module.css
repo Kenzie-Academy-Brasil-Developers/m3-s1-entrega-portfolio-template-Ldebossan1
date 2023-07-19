@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.875rem;
+    margin-bottom: 2.5rem;
+}
+
+.header img {
+    width: 4.4188rem;
+    height: 0.8669rem;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+
+}
+
+.header li {
+    cursor: pointer;
+    padding: 50px;
+}
+
+@media (min-width: 720px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        width: 95%;
+    }
+
+    .header li {
+        padding: 30px;
+    }
+
+    .header button{
+        height: 2.4375rem;
+        width: auto;
+        padding: 0.625rem;
+    }
+}

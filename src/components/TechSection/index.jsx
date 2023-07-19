@@ -1,19 +1,15 @@
-import { technologies } from "../../data/technologies";
+import styles from "./styles/TechSection.module.css"
+import "../../styles/App.css"
+import { RenderTechs } from "./TechList";
+
 
 export const TechSection = () => {
   return (
-      <div className="TechSection">
+    <section className="container">
+      <div className={styles.TechSection}>
         <h2 className="title2">Tecnologias</h2>
-        <ul className="listTech">
-          {technologies.map((technology) => {
-            return (
-              <li className="techCard" key={technology.name}>
-                <img src={technology.img} alt={technology.name} />
-                <span>{technology.name}</span>
-              </li>
-            );
-          })}
-        </ul>
+        <RenderTechs/>
       </div>
+    </section>
   );
 };

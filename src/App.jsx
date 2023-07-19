@@ -4,9 +4,7 @@ import { ProjectSection } from "./components/ProjectSection"
 import { TechSection } from "./components/TechSection"
 import { Footer } from "./components/footer"
 import { Header } from "./components/header"
-import { technologies } from "./data/technologies"
 
-import "./styles/App.css"
 
 function App() {
 

@@ -1,4 +1,5 @@
 @import "./global.css";
+@import "./grid.css";
 
 * {
     box-sizing: border-box;
@@ -9,196 +10,52 @@
     font-family: var(--font1);
 }
 
-@media (max-width: 380px) {
 
-    header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 1.25rem;
-    }
+li {
+    list-style: none;
+}
 
-    header img {
-        width: 4.4188rem;
-        height: 0.8669rem;
-    }
+button {
+    background-color: var(--color-primary);
+    width: auto;
+    height: 2.4375rem;
+    border-radius: 0.5rem;
+    border: transparent;
+    font-weight: 600;
+    font-size: 0.875rem;
+    cursor: pointer;
+    padding: 10px;
+}
 
-    header ul {
-        list-style: none;
-        display: flex;
-        justify-content: space-evenly;
-        width: 100vw;
-        margin: 1.25rem;
-    }
+button:hover {
+    background-color: var(--color-primary-hover);
+}
 
-    header li {
-        cursor: pointer;
-    }
+.title2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2.72rem;
+}
 
-    li {
-        list-style: none;
-    }
+.paragraph {
+    font-size: 1rem;
+    line-height: 1.875rem;
+    font-weight: 400;
+    margin-bottom: 0.625rem;
+    margin-top: 2.5rem;
+}
 
-    button {
-        background-color: var(--color-primary);
-        width: 6.25rem;
-        height: 1.875rem;
-        border-radius: 0.5rem;
-        border: transparent;
-        font-weight: 600;
-        font-size: 0.875rem;
-        cursor: pointer;
-    }
+.AboutMeSection {
+    margin-top: 6.25rem;
+    margin-left: 0.9375rem;
+}
 
-    .BannerSection {
-        margin: 1.25rem;
-        width: 17.5rem;
-    }
-
-    .title2 {
-        font-size: 2.25rem;
-        font-weight: 700;
-        line-height: 2.72rem;
-    }
-
-    .userName {
-        color: var(--color-primary);
-        font-weight: 400;
-        margin-bottom: 0.625rem;
-        font-size: 0.9375rem;
-    }
-
-    .BannerTitle {
-        font-size: 2.25rem;
-        line-height: 3.125rem;
-        font-weight: 800;
-    }
-
-    .paragraph {
-        font-size: 1rem;
-        line-height: 1.875rem;
-        font-weight: 400;
-        margin-bottom: 0.625rem;
-        margin-top: 2.5rem;
-    }
-
-    .buttonBanner {
-        margin-top: 1.25rem;
-        margin-bottom: 1.875rem;
-    }
-
-    .imgBanner {
-        width: 309px;
-        height: 11.6875rem;
-        margin-top: 1.875rem;
-    }
-
+@media (min-width:720px) {
     .AboutMeSection {
-        margin-top: 6.25rem;
-        margin-left: 0.9375rem;
-    }
-
-    .TechSection {
-        margin-top: 5rem;
-        margin-left: 0.625rem;
-    }
-
-    .listTech {
-        margin-top: 1.25rem;
         display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin: 0.625rem;
+        flex-direction: row;
+        width: 100%;
+        gap: 100px;
     }
 
-    .techCard {
-        border: 0.0625rem solid rgba(255, 255, 255, 0.5);
-        display: flex;
-        align-items: center;
-        width: 20.75rem;
-        height: 5rem;
-        margin-top: 0.625rem;
-        padding-left: 1.25rem;
-        border-radius: 1.5625rem;
-    }
-
-    .techCard span {
-        font-size: 1.375rem;
-        font-weight: 800;
-        padding-left: 1.25rem;
-    }
-
-    .ProjectsSection {
-        margin-top: 5rem;
-        margin-left: 0.9375rem;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .ProjectsList {
-        margin-top: 1.25rem;
-    }
-
-    .ProjectsCard {
-        border: 1px solid rgba(255, 255, 255, 0.5);
-        border-radius: 1.5625rem;
-        width: 20.75rem;
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        padding-top: 20px;
-        padding-left: 20px;
-        margin-top: 20px;
-    }
-
-    .ProjectsCard img {
-        width: 2.3125rem;
-        height: 2.375rem;
-        margin-left: 16.25rem;
-        position: absolute;
-    }
-
-    .ProjectTitle {
-        font-size: 1.375rem;
-        font-weight: 800;
-        line-height: 1.5625rem;
-        padding-bottom: 0.625rem;
-    }
-
-    .ProjectDescription {
-        margin-top: 1.875rem;
-        font-size: 1rem;
-        font-weight: 400;
-    }
-
-    .ProjectLink {
-        font-size: 1rem;
-        color: var(--color-primary);
-        font-weight: 700;
-        margin-top: 3.125rem;
-    }
-
-    footer {
-        margin-top: 3.125rem;
-        margin-left: 0.9375rem;
-        border-top: 0.0625rem solid var(--grey2);
-        border-bottom: 0.0625rem solid var(--grey2);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 20.75rem;
-        padding-top: 2.5rem;
-    }
-
-    footer ul {
-        display: flex;
-        margin-top: 20px;
-    }
-    
-    footer li {
-        margin-left: 10px;
-    }
 }
