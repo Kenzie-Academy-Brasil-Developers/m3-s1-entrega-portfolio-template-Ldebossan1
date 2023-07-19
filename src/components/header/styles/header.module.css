@@ -22,7 +22,7 @@
 
 .header li {
     cursor: pointer;
-    padding: 50px;
+    padding: 3.125rem;
 }
 
 @media (min-width: 720px) {
@@ -34,7 +34,7 @@
     }
 
     .header li {
-        padding: 30px;
+        padding: 1.875rem;
     }
 
     .header button{
